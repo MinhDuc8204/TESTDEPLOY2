@@ -1,0 +1,412 @@
+<main>
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-wrapper">
+      <h1 class="hero-title">Explore Unique Digital Art and Collectibles</h1>
+      <p class="hero-desc">
+        Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus
+        facilisi ultrices sed faucibus proin cum ut. Eu dictum nisi facilisis
+        non habitant senectus eget sollicitudin.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-bg">
+          <span>Discover now</span>
+          <img src="../assets/icons/arrow_right.svg" alt="icon array right" />
+        </button>
+        <button class="btn">
+          <img src="../assets/icons/diamond.svg" alt="icon array right" />
+          <span>Create your own</span>
+        </button>
+      </div>
+
+      <!-- card hero - Sales -->
+      <include
+        src="./components/vertical-hero-card.html"
+        locals='{
+        "className": "desktop",
+        "number": "160k"
+      }'
+      ></include>
+      <include
+        src="./components/vertical-hero-card.html"
+        locals='{
+        "className": "mobile",
+        "number": "12k"
+      }'
+      ></include>
+
+      <!-- card hero - Users -->
+      <include
+        src="./components/horizontal-hero-card.html"
+        locals='{
+        "className": "desktop",
+        "img1": "profilePic1.png",
+        "img2": "profilePic2.png",
+        "img3": "profilePic3.png"
+      }'
+      ></include>
+      <include
+        src="./components/horizontal-hero-card.html"
+        locals='{
+        "className": "mobile",
+        "img1": "profilePic5.png",
+        "img2": "profilePic6.png",
+        "img3": "ebony.jpeg"
+      }'
+      ></include>
+    </div>
+  </section>
+
+  <!-- buttons in mobile -->
+  <section class="hero-buttons mobile">
+    <button class="btn btn-bg">
+      <span>Discover now</span>
+      <img src="../assets/icons/arrow_right.svg" alt="icon array right" />
+    </button>
+    <button class="btn">
+      <img
+        src="../assets/icons/diamond-purple.svg"
+        alt="icon array right"
+        class="primary"
+      />
+      <img
+        src="../assets/icons/diamond.svg"
+        alt="icon array right"
+        class="secondary"
+      />
+      <span>Create your own</span>
+    </button>
+  </section>
+
+  <!-- Feature -->
+  <section class="feature">
+    <header class="feature-head">
+      <h3 class="feature-title">Featured NFTs</h3>
+      <div class="feature-navigate">
+        <img src="../assets/icons/left.svg" alt="left arrow" />
+        <img src="../assets/icons/right.svg" alt="right arrow" />
+      </div>
+    </header>
+    <main class="nft-cards">
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+          "name": "Iron man",
+          "heart": "heart.svg",
+          "img": "nft_ironman.jpeg",
+          "avt1": "profilePic4.png",
+          "avt2": "profilePic5.png",
+          "text": "@CosmicArtisan , @Sculptor",
+          "price": "1.35",
+          "className": "desktop"
+        }'
+      ></include>
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+          "name": "Feline Brushstrokes",
+          "heart": "heart.svg",
+          "img": "nft_cat.jpeg",
+          "avt1": "profilePic6.png",
+          "avt2": "profilePic7.png",
+          "text": "@Robotica , @MysticInk",
+          "price": "1.86",
+          "className": "mobile"
+        }'
+      ></include>
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+          "name": "Illuminated Enigma",
+          "heart": "heart_active.svg",
+          "img": "nft_enigma.jpeg",
+          "avt1": "profilePic8.png",
+          "avt2": "profilePic9.png",
+          "text": "@EtherFlow , @NanoNebula",
+          "price": "2.05",
+          "className": "desktop"
+        }'
+      ></include>
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Pint-Sized Voyager",
+            "heart": "heart.svg",
+            "img": "pint.jpeg",
+            "avt1": "profilePic6.png",
+            "avt2": "",
+            "text": "@BinaryBard",
+            "price": "1.87",
+          "className": "tablet"
+          }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Charmingly Fluffed",
+            "heart": "heart.svg",
+            "img": "fluffed.jpeg",
+            "avt1": "profilePic7.png",
+            "avt2": "profilePic12.png",
+            "text": "@LunarArt , @Robotica",
+            "price": "2.32",
+          "className": "tablet"
+        }'
+      ></include>
+    </main>
+  </section>
+
+  <!-- Team -->
+  <section class="team">
+    <div class="team-wrapper">
+      <header class="team-top">
+        <h3 class="team-heading">Meet Our Talented Creators</h3>
+        <span class="team-see">see all</span>
+      </header>
+      <main class="team-cards">
+        <include
+          src="./components/team-card.html"
+          locals='{
+            "cards": [
+              {"img": "profilePic10.png", "name": "sata sculpture", "id": "@Sculptor", "number": "890 items"},
+              {"img": "profilePic5.png", "name": "cosmic art", "id": "@CosmicArtist", "number": "1004 items"},
+              {"img": "profilePic7.png", "name": "Josmin nan", "id": "@NanoNebula", "number": "990 items"},
+              {"img": "profilePic8.png", "name": "Binary Barde", "id": "@BinaryBard", "number": "1025 items"},
+              {"img": "profilePic4.png", "name": "Pixel Smith", "id": "@PixelSmithNFT", "number": "1145 items"},
+              {"img": "profilePic6.png", "name": "Art Waveze", "id": "@WavezNFT", "number": "840 items"},
+              {"img": "profilePic11.png", "name": "Ether Easel", "id": "@Ethereasel", "number": "798 items"}
+            ]
+          }'
+        ></include>
+      </main>
+    </div>
+  </section>
+
+  <!-- Explore -->
+  <section class="explore">
+    <div class="explore-frame">
+      <h3 class="explore-heading">Explore</h3>
+      <p class="explore-desc">
+        Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus
+        facilisi ultrices sed faucibus proin cum ut.
+      </p>
+      <div class="explore-func">
+        <div class="explore-categories">
+          <include
+            src="./components/explore-categories.html"
+            locals='{
+              "buttons": [
+                {"className": "btn btn-bg", "text": "All categories"},
+                {"className": "", "text": "Art"},
+                {"className": "", "text": "Photography"},
+                {"className": "", "text": "Virtal worlds"},
+                {"className": "", "text": "Game"}
+              ]
+            }'
+          ></include>
+        </div>
+        <button class="explore-filter">
+          Filter
+          <img src="../assets/icons/filter.svg" alt="Filter" />
+        </button>
+      </div>
+    </div>
+    <main class="nft-cards">
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+          "name": "Iron man",
+          "heart": "heart.svg",
+          "img": "nft_ironman.jpeg",
+          "avt1": "profilePic4.png",
+          "avt2": "profilePic5.png",
+          "text": "@CosmicArtisan , @Sculptor",
+          "price": "1.35",
+          "className": "mobile"
+        }'
+      ></include>
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+          "name": "Feline Brushstrokes",
+          "heart": "heart.svg",
+          "img": "nft_cat.jpeg",
+          "avt1": "profilePic6.png",
+          "avt2": "profilePic7.png",
+          "text": "@Robotica , @MysticInk",
+          "price": "1.86",
+          "className": "mobile"
+        }'
+      ></include>
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+          "name": "Illuminated Enigma",
+          "heart": "heart_active.svg",
+          "img": "nft_enigma.jpeg",
+          "avt1": "profilePic8.png",
+          "avt2": "profilePic9.png",
+          "text": "@EtherFlow , @NanoNebula",
+          "price": "2.05",
+          "className": "desktop"
+        }'
+      ></include>
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Pint-Sized Voyager",
+            "heart": "heart.svg",
+            "img": "pint.jpeg",
+            "avt1": "profilePic6.png",
+            "avt2": "",
+            "text": "@BinaryBard",
+            "price": "1.87",
+          "className": "tablet"
+          }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Charmingly Fluffed",
+            "heart": "heart.svg",
+            "img": "fluffed.jpeg",
+            "avt1": "profilePic7.png",
+            "avt2": "profilePic12.png",
+            "text": "@LunarArt , @Robotica",
+            "price": "2.32",
+          "className": "tablet"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Rosa Vista Realm",
+            "heart": "heart.svg",
+            "img": "rosa.png",
+            "avt1": "profilePic4.png",
+            "avt2": "profilePic5.png",
+            "text": "@CosmicArtisan , @Sculptor",
+            "price": "1.35",
+          "className": "mobile"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Gilded Ebony",
+            "heart": "heart.svg",
+            "img": "ebony.jpeg",
+            "avt1": "profilePic6.png",
+            "avt2": "profilePic7.png",
+            "text": "@Robotica , @MysticInk",
+            "price": "1.68",
+          "className": "mobile"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Hazy Hue Wolf",
+            "heart": "heart.svg",
+            "img": "hazy.jpeg",
+            "avt1": "profilePic8.png",
+            "avt2": "profilePic9.png",
+            "text": "@EtherFlow , @NanoNebula",
+            "price": "2.05",
+          "className": "desktop"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Pint-Sized Voyager",
+            "heart": "heart.svg",
+            "img": "voyater.jpeg",
+            "avt1": "profilePic6.png",
+            "avt2": "",
+            "text": "@BinaryBard",
+            "price": "1.87",
+          "className": "tablet"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+            "name": "Poker",
+            "heart": "heart_active.svg",
+            "img": "poker.jpeg",
+            "avt1": "profilePic7.png",
+            "avt2": "profilePic12.png",
+            "text": "@LunarArt , @Robotica",
+            "price": "2.32",
+          "className": "tablet"
+        }'
+      ></include>
+
+      <include
+        src="./components/ntfcard-image.html"
+        locals='{
+          "name": "Illuminated Enigma",
+          "heart": "heart_active.svg",
+          "img": "nft_enigma.jpeg",
+          "avt1": "profilePic8.png",
+          "avt2": "profilePic9.png",
+          "text": "@EtherFlow , @NanoNebula",
+          "price": "2.05",
+          "className": "hide"
+        }'
+      ></include>
+    </main>
+    <div class="btn-wrapper">
+      <button class="load-more">
+        Load more <img src="../assets/icons/down.svg" alt="load-more" />
+      </button>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <section class="community">
+    <div class="community-wrapper">
+      <figure class="community-image">
+        <picture>
+          <source
+            media="(max-width: 992px)"
+            srcset="../assets/images/mobile/community_card.png"
+          />
+          <source
+            media="(max-width: 1280px)"
+            srcset="../assets/images/tablet/community_card.png"
+          />
+          <img
+            src="../assets/images/desktop/community_card.png"
+            alt="community"
+          />
+        </picture>
+      </figure>
+      <div class="community-content">
+        <h2 class="community-heading">Join our community</h2>
+        <p class="community-desc">
+          Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus
+          facilisi ultrices sed faucibus proin cum ut.Lorem ipsum dolor sit amet
+          consectetur. Iaculis vestibulum purus facilisi ultrices sed faucibus
+          proin cum ut.
+        </p>
+        <div class="community-input">
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="community-field"
+          />
+          <button type="button" class="community-button">Get Email</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

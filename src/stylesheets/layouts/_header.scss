@@ -1,0 +1,156 @@
+@use '../abstracts' as *;
+
+.container {
+  max-width: 192rem;
+  margin-inline: auto;
+}
+
+.body-content {
+  padding: 3.2rem 14rem;
+
+  @include lg {
+    padding: 3.2rem 7rem;
+  }
+
+  @include md {
+    padding: 1.8rem 2.7rem;
+  }
+}
+
+.header {
+  @include between {
+    align-items: center;
+  }
+}
+
+.header-left {
+  @include center-vertical(1.6rem);
+
+  .logo-name {
+    @include font(2.8rem, 700);
+    color: $primary-color;
+  }
+
+  .search {
+    position: relative;
+
+    @include xxl {
+      display: none;
+    }
+  }
+
+  .search-input {
+    @include font(1.6rem, 400);
+    border: none;
+    background-color: $light-black;
+    border-radius: 8px;
+    padding: 1rem 1rem 1rem 4.5rem;
+  }
+
+  .search-icon {
+    width: 2.5rem;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @include sm {
+    .logo-name {
+      font-size: 2.1rem;
+    }
+  }
+}
+
+.header-right {
+  @include center-vertical();
+
+  .menus {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .link {
+    @include slow;
+    color: $black;
+    padding: 1rem;
+    @include font(1.6rem, 400);
+  }
+
+  .link:hover {
+    color: $primary-color;
+  }
+
+  .noti-btn {
+    padding: 1rem;
+    background-color: $light-black;
+    border-radius: 8px;
+    margin-left: 1.2rem;
+    cursor: pointer;
+  }
+
+  .noti-btn:hover {
+    .noti-icon {
+      animation: shakes 1s linear infinite;
+    }
+  }
+
+  .noti-icon {
+    position: relative;
+  }
+
+  .dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .auth {
+    @include center-vertical(1rem);
+    @include font(1.6rem, 400);
+    background-color: $light-black;
+    border-radius: 5rem;
+    color: $primary-color;
+    padding-left: 2.4rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+  }
+
+  @include xxl {
+    display: none;
+  }
+}
+
+.menu-icon {
+  background-color: $light-black;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+
+  @include xxl {
+    display: block;
+  }
+}
+
+@keyframes shakes {
+
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  50% {
+    transform: rotate(10deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(-10deg);
+  }
+}
